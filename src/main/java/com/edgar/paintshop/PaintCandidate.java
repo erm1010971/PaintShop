@@ -1,18 +1,20 @@
 package com.edgar.paintshop;
 
-public class PaintCandidate {
-	Paint possibleResultTmp[];
-	int totalCandidateMattes=0;
+import java.util.ArrayList;
 
+public class PaintCandidate {
+
+	ArrayList<Paint> possibleResultTmp  = new ArrayList<Paint>();;
+	int totalCandidateMattes=0;
 
 	public PaintCandidate() {
 	}
-	
-	public Paint[] getPossibleResultTmp() {
+		
+	public ArrayList<Paint> getPossibleResultTmp() {
 		return possibleResultTmp;
 	}
 
-	public void setPossibleResultTmp(Paint[] possibleResultTmp) {
+	public void setPossibleResultTmp(ArrayList<Paint> possibleResultTmp) {
 		this.possibleResultTmp = possibleResultTmp;
 	}
 
